@@ -1,0 +1,49 @@
+multi-omics data (genomics, transcriptomics, proteomics, metabolomics)
+databases: NCBI (Gene, GEO), Ensembl, UniProt, TCGA, KEGG, Reactome, STRING.
+Python
+essential libraries: pandas, numpy, matplotlib, seaborn, requests, biopython, gseapy, networkx.
+R-
+Bioconductor: DESeq2, clusterProfiler, limma, GEOquery, STRINGdb, RCytoscape.
+Fetch gene information for a disease of interest from NCBI Gene using Entrez (Biopython or rentrez in R).
+
+
+Public Omics Datasets
+Retrieve and explore transcriptomics data from GEO/TCGA.
+Use GEOquery (R) to download a small RNA-seq dataset (e.g., GSE123456) and extract expression matrix and phenotype.
+TCGAbiolinks (R) or GDC API (Python) to fetch TCGA data for a cancer type.
+Mini-project: Choose a disease, download a relevant expression dataset, and visualize sample groups.
+
+Differential Expression & Functional Enrichment
+Identify differentially expressed genes (DEGs) and interpret via GO/KEGG.
+Statistical principles of differential expression (DESeq2, limma).
+Over-representation analysis (ORA) vs. Gene Set Enrichment Analysis (GSEA).
+Mini-project: Generate a report with top enriched pathways and candidate genes.
+
+Pathway Analysis & Network Biology
+Map DEGs onto pathways and build gene interaction networks.
+Pathway databases: KEGG, Reactome, WikiPathways.
+Introduction to network biology: nodes, edges, centrality.
+Use pathview (R) or gseapy to visualize KEGG pathways with DEGs highlighted.
+Build a gene-gene interaction network using STRING (via STRINGdb R package or website export) for the top DEGs.
+Import network into Cytoscape (desktop) and apply basic layout, style, and analyze hub genes.
+Mini-project: Create a pathway figure and a network visualization for your disease.
+
+
+
+Protein-Protein Interaction (PPI) Networks
+ Deep dive into PPI databases and network analysis.
+
+Multi-Omics Integration
+Goal: Combine transcriptomics with proteomics or metabolomics data.
+Tools: mixOmics (R), MOFA, or simple correlation approaches.
+Create an integrated view of gene and protein expression for a few key pathways.
+
+
+Literature Mining for Target Prioritization
+Extract gene-disease associations and evidence from literature.
+Generate a priority list of candidate targets with supporting literature counts.
+
+Building Reproducible Pipelines
+Snakemake or Nextflow
+
+
